@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Web/Web_Shop/bai3/styles.css">
-    <script src="/Web/Web_Shop/bai3/script.js"></script>
+
 </head>
+
 <body>
-    
+    <header>
+        <h1>Sports Shop</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Main</a>
+                </li>
+                <li>
+                    <a href="">Product</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>Discover your new world, enjoy the best things you want</section>
+        <!-- Thanh tìm kiếm -->
+        <div class="search-bar" style="text-align:center; margin: 20px 0;">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+            <button id="searchBtn">Tìm</button>
+            <button id="addProductBtn">Thêm sản phẩm</button>
+        </div>
+        <div id="product-list">
+            <article class="product-item">
+                <h3 class="product-name">Vợt cầu lông VNB TC88B chính hãng</h3>
+                <p>Mã: VNB010473 || Thương hiệu: VNB | Tình trạng: Còn hàng</p>
+                <img src="image/vot-cau-long-yonex-astrox-100zz-chinh-hang_0.jpg" alt="THIS IMAGE IS UNDEFINED"
+                    width="400px" height="400px">
+            </article>
+            <article class="product-item">
+                <h3 class="product-name">Hộp bóng Pickleball 26 Lỗ</h3>
+                <p>Mã: W1004|| Tình trạng: Còn hàng</p>
+                <img src="image/bong-pickleball-26-lo.jpg" alt="THIS IMAGE IS UNDEFINED">
+            </article>
+            <article class="product-item">
+                <h3 class="product-name">Giầy Cầu Lông Kawasaki Chính Hãng K086 - Xanh</h3>
+                <p>Mã: W297|| Tình trạng :Hết hàng</p>
+                <img src="image/giay-cau-long-kawasaki-086-xanh_1.jpg" alt="THIS IMAGE IS UNDEFINED">
+            </article>
+        </div>
+
+        <form id="addProductForm" class="hidden">
+            <label for="name">Name: </label><br>
+            <input type="text" placeholder="Enter product name" id="name"><br>
+            <label for="description">Description: </label><br>
+            <textarea></textarea><br>
+            <label for="productImage">Ảnh sản phẩm:</label>
+            <input type="file" id="productImage" accept="image/*">
+
+            <img id="previewImage" src="" alt="Preview" style="max-width:150px; display:none; margin-top:10px;">
+
+            <button type="submit">Submit</button>
+        </form>
+
+
+
+    </main>
+    <footer>
+        <p>Address: 203 XA DAN 2 PHUONG NAM DONG HA NOI</p>
+    </footer>
+    <script src="/Web/Web_Shop/bai3/script.js"></script>
 </body>
+
 </html>
